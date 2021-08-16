@@ -58,6 +58,7 @@ body {
   border: 1px solid black;
   height: 100%;
   background-color: #121212;
+  
 }
 
 .header__search input:focus {
@@ -83,6 +84,7 @@ body {
 /* Sidebar */
 .mainBody {
   height: calc(100vh - 70px);
+  width: 100%;
   display: flex;
   overflow: hidden;
 }
@@ -90,8 +92,13 @@ body {
 .sidebar {
   height: 100%;
   width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 70px;
+  left: 0;
   background-color: #202020;
-  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
 .sidebar__categories {
@@ -102,12 +109,6 @@ body {
   margin-top: 15px;
 }
 
-.cate-first-child {
-  background-color: #4e4d4d;
-}
-#cate {
-  color: rgb(229, 226, 226);
-}
 .sidebar__category {
   display: flex;
   align-items: center;
@@ -137,18 +138,30 @@ hr {
 /* categori */
 
 .categories {
+  display: flex;
+  width: 100%;
   padding: 1rem 1rem;
   border-top: 1px solid #777;
   background: #202020;
   z-index: 1;
+  overflow: hidden;
+  overflow-x: scroll;
   overflow-x: scroll;
   position: fixed;
   top: 70px;
+  opacity: 0.9;
 }
 
 .categories::-webkit-scrollbar {
   height: 4px;
   background-color: #4b4a4a;
+}
+
+.cate-first-child {
+  background-color: #4e4d4d;
+}
+#cate {
+  color: rgb(229, 226, 226);
 }
 
 .category-section {
@@ -184,6 +197,7 @@ hr {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
+  margin-left: 230px;
 }
 .videos::-webkit-scrollbar {
   display: none;
@@ -229,10 +243,12 @@ hr {
   text-overflow: ellipsis;
   word-break: break-word;
 }
-
-.video-container {
+.video-containers{
   width: 100%;
   height: 100%;
+}
+
+.video-container {
   min-width: 250px;
   min-height: 150px;
   z-index: 0;
@@ -254,8 +270,9 @@ hr {
 }
 
 .video-section {
+  width: calc(100vw -230px);
   display: grid;
-  grid-template-columns: repeat(4, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, auto);
   gap: 3rem 1rem;
   padding: 3rem 0;
   margin: 0 2rem;
@@ -294,7 +311,7 @@ h1 {
 
   .video-section {
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, auto);
     gap: 3rem 1rem;
     padding: 3rem 0;
     margin: 0 2rem;
@@ -340,7 +357,9 @@ h1 {
     z-index: 2;
     transform: translateX() 2s;
   }
-
+  .videos{
+    margin-left: 0;
+  }
   .video-section {
     grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
