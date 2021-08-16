@@ -1,333 +1,559 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="shortcut icon" href="./image/youtube-1837872_1280-removebg-preview.png" type="image/x-icon">
-    <title>Youtube</title>
-  </head>
-  <body>
-    <div class="header">
-      <div class="header__left">
-        <i id="menu" class="material-icons">menu</i>
-        <img 
-        src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg"
-          alt=""
-        />
-      </div>
-      <div class="header__search">
-        <form action="">
-          <input type="text" placeholder="Search" />
-          <button><i class="material-icons">search</i></button>
-        </form>
-      </div>
 
-      <div class="header__icons">
-        <i class="material-icons display-this">search</i>
-        <i class="material-icons">videocam</i>
-        <i class="material-icons">apps</i>
-        <i class="material-icons">notifications</i>
-        <img id="avt" src="image/IMG_2013.jpg" class="material-icons display-this"></img>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="shortcut icon" href="./image/youtube-1837872_1280-removebg-preview.png" type="image/x-icon">
+  <title>Youtube</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__left">
+      <i id="menu" class="material-icons">menu</i>
+      <img src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="" />
+    </div>
+    <div class="header__search">
+      <form action="">
+        <input type="text" placeholder="Search" />
+        <button><i class="material-icons">search</i></button>
+      </form>
     </div>
 
-    <div class="mainBody">
-      <div class="sidebar">
-        <div class="sidebar__categories">
-          <div class="sidebar__category cate-first-child ">
-            <i id="cate" class="material-icons">home</i>
-            <span>Trang Chủ</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">local_fire_department</i>
-            <span>Thịnh Hành</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">subscriptions</i>
-            <span>Kênh Đăng Ký</span>
-          </div>
+    <div class="header__icons">
+      <i class="material-icons display-this">search</i>
+      <i class="material-icons">videocam</i>
+      <i class="material-icons">apps</i>
+      <i class="material-icons">notifications</i>
+      <img id="avt" src="image/IMG_2013.jpg" class="material-icons display-this"></img>
+    </div>
+  </div>
+
+  <div class="mainBody">
+    <div class="sidebar">
+      <div class="sidebar__categories">
+        <div class="sidebar__category cate-first-child ">
+          <i id="cate" class="material-icons">home</i>
+          <span>Trang Chủ</span>
         </div>
-        <hr />
-        <div class="sidebar__categories">
-          <div class="sidebar__category">
-            <i class="material-icons">library_add_check</i>
-            <span>Thư Viện</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">history</i>
-            <span>Đã Xem</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">play_arrow</i>
-            <span>Video Của Bạn</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">watch_later</i>
-            <span>Xem Sau</span>
-          </div>
-          <div class="sidebar__category">
-            <i class="material-icons">thumb_up</i>
-            <span>Đã Thích</span>
-          </div>
+        <div class="sidebar__category">
+          <i class="material-icons">local_fire_department</i>
+          <span>Thịnh Hành</span>
         </div>
-        <hr />
+        <div class="sidebar__category">
+          <i class="material-icons">subscriptions</i>
+          <span>Kênh Đăng Ký</span>
+        </div>
       </div>
-
-      <div class="videos" id="myCategory">
-        <div class="categories">
-            <section class="category-section">
-                <button class="category">Tất cả</button>
-                <button class="category">Danh sách kết hợp</button>
-                <button class="category">Chương trình nấu ăn</button>
-                <button class="category">Grand Theft Auto Online</button>
-                <button class="category">Đọc rap</button>
-                <button class="category">Âm nhạc</button>
-                <button class="category">Trực tiếp</button>
-                <button class="category">CSS</button>
-                <button class="category">Javascript</button>
-                <button class="category">16NS</button>
-                <button class="category">Blacka</button>
-                <button class="category">Blacka</button>
-                <button class="category">Blacka</button>
-                <button class="category">Blacka</button>
-            </section>
+      <hr />
+      <div class="sidebar__categories">
+        <div class="sidebar__category">
+          <i class="material-icons">library_add_check</i>
+          <span>Thư Viện</span>
         </div>
-        <div class="video-containers">
-            <section class="video-section">
-                <article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="https://i.ytimg.com/vi/oQfbr2-zXOw/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCPdcoVn6BpmoTTLVZDV9d_skbXvg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">HAZARD CLIQUE - "TỘI" (PROD. BY DAI CA P)</a>
-                            <a href="#" class="video-channel">hazardclique</a>
-                            <div class="video-metadata">
-                                <span>216 N lượt xem</span> •
-                                <span>6 tháng trước</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article>
-                <article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="https://i.ytimg.com/vi/oQfbr2-zXOw/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCPdcoVn6BpmoTTLVZDV9d_skbXvg" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article><article class="video-container">
-                    <a href="" class="thumnail" data-duration="12:21">
-                        <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
-                    </a>
-                    <div class="video-bottom-section">
-                        <a href="#">
-                            <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
-                        </a>
-                        <div class="video-details">
-                            <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto. Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
-                            <a href="#" class="video-channel">lorem</a>
-                            <div class="video-metadata">
-                                <span>69.69K views</span> •
-                                <span>5 months ago</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </article>
-            </section>
+        <div class="sidebar__category">
+          <i class="material-icons">history</i>
+          <span>Đã Xem</span>
         </div>
+        <div class="sidebar__category">
+          <i class="material-icons">play_arrow</i>
+          <span>Video Của Bạn</span>
+        </div>
+        <div class="sidebar__category">
+          <i class="material-icons">watch_later</i>
+          <span>Xem Sau</span>
+        </div>
+        <div class="sidebar__category">
+          <i class="material-icons">thumb_up</i>
+          <span>Đã Thích</span>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <div class="videos" id="myCategory">
+      <div class="categories">
+        <section class="category-section">
+          <button class="category">Tất cả</button>
+          <button class="category">Danh sách kết hợp</button>
+          <button class="category">Chương trình nấu ăn</button>
+          <button class="category">Grand Theft Auto Online</button>
+          <button class="category">Đọc rap</button>
+          <button class="category">Âm nhạc</button>
+          <button class="category">Trực tiếp</button>
+          <button class="category">CSS</button>
+          <button class="category">Javascript</button>
+          <button class="category">16NS</button>
+          <button class="category">Blacka</button>
+          <button class="category">Blacka</button>
+          <button class="category">Blacka</button>
+          <button class="category">Blacka</button>
+        </section>
+      </div>
+      <div class="video-containers">
+        <section class="video-section">
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img
+                src="https://i.ytimg.com/vi/oQfbr2-zXOw/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCPdcoVn6BpmoTTLVZDV9d_skbXvg"
+                alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">HAZARD CLIQUE - "TỘI" (PROD. BY DAI CA P)</a>
+                <a href="#" class="video-channel">hazardclique</a>
+                <div class="video-metadata">
+                  <span>216 N lượt xem</span> •
+                  <span>6 tháng trước</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img
+                src="https://i.ytimg.com/vi/oQfbr2-zXOw/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCPdcoVn6BpmoTTLVZDV9d_skbXvg"
+                alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+          <article class="video-container">
+            <a href="" class="thumnail" data-duration="12:21">
+              <img src="http://dummyimage.com/275x154.png/5fa2dd/ffffff" alt="" class="thumbnail-image">
+            </a>
+            <div class="video-bottom-section">
+              <a href="#">
+                <img src="http://dummyimage.com/36x36.png/ff4444/ffffff" class="channel-logo" alt="channel-logo">
+              </a>
+              <div class="video-details">
+                <a href="#" class="video-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quae
+                  repellat tempora quidem facilis est quaerat quam, necessitatibus, animi tempore illum architecto.
+                  Magni tenetur molestias doloremque explicabo assumenda dignissimos laborum?</a>
+                <a href="#" class="video-channel">lorem</a>
+                <div class="video-metadata">
+                  <span>69.69K views</span> •
+                  <span>5 months ago</span>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </section>
+      </div>
     </div>
     <script src="index.js"></script>
     <!-- Main Body Ends -->
-  </body>
-  <script>
-      const menu = document.querySelector('#menu');
-console.log(menu);
-const sidebar = document.querySelector('.sidebar');
-console.log(sidebar);
+</body>
+<script>
+  const menu = document.querySelector('#menu');
+  console.log(menu);
+  const sidebar = document.querySelector('.sidebar');
+  console.log(sidebar);
 
-menu.addEventListener('click', function () {
-  sidebar.classList.toggle('show-sidebar');
-});
-  </script>
+  menu.addEventListener('click', function () {
+    sidebar.classList.toggle('show-sidebar');
+  });
+</script>
+
 </html>

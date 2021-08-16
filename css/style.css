@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* header */
@@ -22,7 +22,9 @@ body {
   align-items: center;
   height: 70px;
   padding: 15px;
+  /* background: red; */
   background-color: #202020;
+  z-index: 1;
 }
 
 .header__left {
@@ -58,7 +60,7 @@ body {
   background-color: #121212;
 }
 
-.header__search input:focus{
+.header__search input:focus {
   outline: 0;
   border-color: #37aabe;
   border-radius: 2px;
@@ -73,9 +75,9 @@ body {
   background-color: #313131;
 }
 
-#avt{
+#avt {
   border-radius: 55%;
-    width: 24px;
+  width: 24px;
 }
 
 /* Sidebar */
@@ -101,9 +103,9 @@ body {
 }
 
 .cate-first-child {
- background-color: #4e4d4d;
+  background-color: #4e4d4d;
 }
-#cate{
+#cate {
   color: rgb(229, 226, 226);
 }
 .sidebar__category {
@@ -140,32 +142,25 @@ hr {
   background: #202020;
   z-index: 1;
   overflow-x: scroll;
-  position: sticky;
-  position: -webkit-sticky;
-  top:0;
+  position: fixed;
+  top: 70px;
 }
 
-
-.categories::-webkit-scrollbar
-{
+.categories::-webkit-scrollbar {
   height: 4px;
-	background-color: #4b4a4a;
+  background-color: #4b4a4a;
 }
-
-
 
 .category-section {
   display: flex;
   white-space: nowrap;
   word-wrap: none;
   z-index: 1;
-
 }
 
 .category:first-child {
   background: #ffffff;
   color: rgb(2, 1, 1);
-  
 }
 .category:first-child i {
   color: rgb(231, 231, 231);
@@ -175,12 +170,11 @@ hr {
   margin-right: 1rem;
   border: 1px solid #777;
   border-radius: 900px;
-  background: #4D4D4D;
-  padding: .5rem 1rem;
+  background: #4d4d4d;
+  padding: 0.5rem 1rem;
   font-size: inherit;
   cursor: pointer;
   color: white;
-
 }
 
 /* videos */
@@ -192,33 +186,31 @@ hr {
   overflow-y: scroll;
 }
 .videos::-webkit-scrollbar {
-    display: none;
-  }
+  display: none;
+}
 
 .video-details {
-    display: flex;
-    flex-direction: column;
-    word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  word-break: break-word;
 }
 
 .video-channel,
 .video-metadata {
-    text-decoration: none;
-    color: #b8abab;
-    overflow: hidden;
-    font-size: 14px;
-    word-break: break-all;
+  text-decoration: none;
+  color: #b8abab;
+  overflow: hidden;
+  font-size: 14px;
+  word-break: break-all;
 }
 
 .thumbnail-image {
   width: 100%;
 }
 
-
-
 .channel-logo {
   border-radius: 50%;
-  background: #AAA;
+  background: #aaa;
   margin-right: 1rem;
 }
 
@@ -230,8 +222,8 @@ hr {
   max-height: 4rem;
   color: white;
   line-height: 1;
-  display:-webkit-box;
-  -webkit-line-clamp:2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -244,6 +236,8 @@ hr {
   min-width: 250px;
   min-height: 150px;
   z-index: 0;
+  position: relative;
+  top: 50px;
 }
 
 .video {
@@ -267,24 +261,50 @@ hr {
   margin: 0 2rem;
 }
 
-
-
 h1 {
   font-size: 20px;
   margin-bottom: 10px;
   color: rgb(3, 3, 3);
 }
 
-
-@media (max-width: 1024px) {
-  .header__search input {
-    width: 300px;
-  }
-  
-  
+@media (max-width: 1280px) {
   .video-section {
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 3rem 1rem;
+    padding: 3rem 0;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .header__search input {
+    width: 300px;
+  }
+
+  .videos {
+  }
+
+  .video-section {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 3rem 1rem;
+    padding: 3rem 0;
+    margin: 0 2rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .video-section {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
     gap: 3rem 1rem;
     padding: 3rem 0;
     margin: 0 2rem;
@@ -295,8 +315,7 @@ h1 {
   .header__search input {
     width: 300px;
   }
-  
-  
+
   .video-section {
     display: grid;
     grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -309,11 +328,11 @@ h1 {
   .header__search {
     display: none;
   }
-  
+
   .sidebar {
     display: none;
   }
-  
+
   .show-sidebar {
     display: inline;
     position: fixed;
@@ -321,8 +340,8 @@ h1 {
     z-index: 2;
     transform: translateX() 2s;
   }
-  
-  .video-section{
+
+  .video-section {
     grid-template-columns: repeat(2, minmax(250px, 1fr));
   }
 }
